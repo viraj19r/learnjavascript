@@ -11,9 +11,9 @@ console.log(list1);
 console.log(list1[2]);
 
 let entries = {
- key1 : yes,
- key2 : no,
- key3 : okay
+ key1 : "yes",
+ key2 : "no",
+ key3 : "okay"
 
 }
  list1.push(entries);
