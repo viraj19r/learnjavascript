@@ -24,11 +24,11 @@ console.log(add(3,5)); // 8 call function
 
 
 function first(){
-    alert("first function");
+    console.log("first function");
 }
 
 function second(name){
-    alert(name);
+    console.log(name);
 }
 first();
 second("second function");
@@ -37,4 +37,16 @@ second("second function");
 function third(string1,string2,string3){
     return string1 + string2 + string3;
 }
-alert(third("one","two","three"));
+console.log(third("one","two","three"));
+
+
+var userInput = 10;
+var currentResult = 5;
+
+function add1(){
+    currentResult += userInput;
+      return currentResult;
+}
+console.log(add1());
+
+ 
