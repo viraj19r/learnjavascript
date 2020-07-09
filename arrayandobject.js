@@ -17,4 +17,4 @@ let entries = {
 };
  list1.push(entries);
  console.log(list1);
- console.log(entries.key2);
+ console.log(entries['key2']);
