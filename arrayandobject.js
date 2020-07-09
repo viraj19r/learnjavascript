@@ -14,7 +14,7 @@ let entries = {
  key1 : "yes",
  key2 : "no",
  key3 : "okay"
-
-}
+};
  list1.push(entries);
  console.log(list1);
+ console.log(entries.key2);
