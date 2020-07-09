@@ -1,3 +1,14 @@
+let p1 = {name: "jai"};
+let p2 = {name: "jai"};
+console.log(p1===p2);  //false
+console.log(p1==p2); //false
+let p3 = p1;
+console.log(p3);
+console.log(p1===p3);  //true
+
+let a1 = [1,2,3];
+let a2 = [1,2,3];
+console.log(a1===a2);  //false same as object
 if ("a" > "b") {
   console.log("a is greater than b");
 } else {
@@ -13,3 +24,12 @@ if ("a" > "A") {
 } else {
   console.log("A is greater than a");
 }
+let c = "an string";
+let d = 6;
+let e = {};
+let f = [];
+ if (!d){
+     console.log("truthy value");
+ }else{
+     console.log("falsy value");
+ }
