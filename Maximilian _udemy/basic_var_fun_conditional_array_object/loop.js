@@ -38,18 +38,18 @@ do {
   j--;
 } while (j > 0);
 
-outerfor: for (let i = 0; i < 4; i++) {
-  innerfor: for (let j = 4; j > 0; j--) {
+outerFor: for (let i = 0; i < 4; i++) {
+  innerFor: for (let j = 4; j > 0; j--) {
     if (j === 2) {
-      break outerfor;
+      break outerFor;
     }
     // console.log(i, j);
   }
 }
-outerfor: for (let i = 0; i < 4; i++) {
-  innerfor: for (let j = 4; j > 0; j--) {
+outerFor: for (let i = 0; i < 4; i++) {
+  innerFor: for (let j = 4; j > 0; j--) {
     if (j === 2) {
-      continue innerfor;
+      continue innerFor;
     }
     // console.log(i, j);
   }
