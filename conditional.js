@@ -1,5 +1,5 @@
-let p1 = {name: "jai"};
-let p2 = {name: "jai"};
+let p1 = {name: "hello"};
+let p2 = {name: "hello"};
 console.log(p1===p2);  //false
 console.log(p1==p2); //false
 let p3 = p1;
