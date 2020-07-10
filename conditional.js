@@ -34,5 +34,5 @@ let f = [];
  }else{
      console.log("falsy value");
  }
- console.log("hello India");
+ console.log("hello world");
 
