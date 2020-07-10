@@ -4,6 +4,7 @@ console.log(p1===p2);  //false
 console.log(p1==p2); //false
 let p3 = p1;
 console.log(p3);
+console.log(p1===p2);  //true
 console.log(p1===p3);  //true
 
 let a1 = [1,2,3];
