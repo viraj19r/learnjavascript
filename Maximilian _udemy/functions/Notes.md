@@ -16,3 +16,9 @@ If we store a function in an object, then the function is said as "method"(a fun
 
 
 #### we will store functions in variables(anonymous function) if we have to use it only once. we will directly create the anonymous function(giving it a name) where we want to use it(as we use it once)
+
+### arrow function syntax
+``` () => {....}  ``` parenthesis is  mandatory if we are not passing any parameter, but if we are passing one parameter than we can omit parenthesis.
+if we have only one expression then we can omit the curly braces.
+function return an object:``` const loadPerson = pName => ({name: pName }); ```
+here extra parenthesis are required if we not use arrow function will think that it is an function body.
