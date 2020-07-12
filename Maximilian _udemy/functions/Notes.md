@@ -22,3 +22,5 @@ If we store a function in an object, then the function is said as "method"(a fun
 if we have only one expression then we can omit the curly braces.
 function return an object:``` const loadPerson = pName => ({name: pName }); ```
 here extra parenthesis are required if we not use arrow function will think that it is an function body.
+#### function callback
+calling a function by passing it as a parameter to another function.
