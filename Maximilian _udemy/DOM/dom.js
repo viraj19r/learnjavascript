@@ -56,4 +56,8 @@ newLi.textContent = "Hi am also new one";
 //  uList.lastElementChild.before(newLi);// to insert before last element
 //  uList.firstElementChild.replaceWith(newLi); // replace with first element
 const secondLi = uList.children[1];
-secondLi.insertAdjacentElement("afterend",newLi); // same as insertAdjacentHTML
+// secondLi.insertAdjacentElement("afterend",newLi); // same as insertAdjacentHTML
+// const newLi2 = newLi.cloneNode(true); // true means it will clone all its children's including all descendants, false - it will not clone childrens
+// uList.append(newLi,newLi2);
+// uList.remove(); // removes the uList
+document.body.removeChild(uList);  // remove using removeChild

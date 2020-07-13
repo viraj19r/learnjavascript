@@ -57,3 +57,8 @@ A DOMString representing the position relative to the element; must be one of th
 * '``afterend``': After the element itself.
 #### text
 The string to be parsed as HTML or XML and inserted into the tree.
+
+##### if we edit the html content using the getElementsBy.... then we found the content updated everywhere in the past(previous memory also) but not by the querySelector.... and all other
+#### ``` someElement.parentNode.removeChild(someElement) ``` =>  Removes the provided child element (NOT the element on which you call it)
+
+#### ```.trim()``` will remove all extra white spaces and all from user input
