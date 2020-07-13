@@ -48,3 +48,12 @@ Takes a CSS class g (e.g. 'some-class') and returns a live HTMLCollection of mat
 ##### `` document.getElementsByTagName(<HTML TAG>); ``
 Takes an HTML tag (e.g. 'p') and returns a live HTMLCollection of matched elements in your DOM. Returns an empty HTMLCollection if not matching elements were found.
 
+### .insertAdjacentHtml(position, text);
+#### position
+A DOMString representing the position relative to the element; must be one of the following strings:
+* '``beforebegin``': Before the element itself.
+* '``afterbegin``': Just inside the element, before its first child.
+* '``beforeend``': Just inside the element, after its last child.
+* '``afterend``': After the element itself.
+#### text
+The string to be parsed as HTML or XML and inserted into the tree.
