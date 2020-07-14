@@ -56,9 +56,17 @@ The string to be parsed as HTML or XML and inserted into the tree.
 #### ``` someElement.parentNode.removeChild(someElement) ``` =>  Removes the provided child element (NOT the element on which you call it)
 
 #### ```.trim()``` will remove all extra white spaces and all from user input
-
+## Array vs Sets vs Maps
 | Array | Sets | Maps |
 |-------|------|------|
 |stores data of any kind and length|stores data of any kind and length|stores key-value data of any kind and length,any key values are allowed |
 |Iterable, special array methods are available| Iterable,some special set methods are available| Iterable,with some special map methods|
 |order is guaranteed, duplicates are allowed,zero-based index to access elements |order is not guaranteed, duplicates are not allowed,no index-based access|order is guaranteed,duplicate keys are not allowed, key-based access |
+## Maps vs Objects
+|Map |Objects|
+|----|-------|
+|can use any value(any type) as keys|only may use strings,numbers and symbols|
+|Better performance for large quantities of data|perfect for medium sized data(30-40 key value pairs)|
+|better performance when adding or removing data frequently|easier and quicker to create(also performance wise)|
+#### WeakSet or WeakMap
+Is like set but have some less methods than set/Map, it is used to store information that is used rarely. so that the browser/javascript inbuilt garbage collector can analyse it and then delete it to increase the performance.
