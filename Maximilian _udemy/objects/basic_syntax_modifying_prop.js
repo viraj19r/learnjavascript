@@ -19,11 +19,14 @@ delete person.hobbies;
 // console.log(person["first name"]);
 // console.log(person["1.5"]);
 // console.log(person[1.5]); // both are correct 
+// dynamically accessing properties
+keyName = "first name";
+console.log(person[keyName]);// it would not work with dot notation
 
-const person1 = {
-  5: "Dan",      // if we have all key names as numbers then output will be in ascending order of the number keys and decimal values will be after them
-  2: "30",
-  3.5 : "hello",
+// const person1 = {
+//   5: "Dan",      // if we have all key names as numbers then output will be in ascending order of the number keys and decimal values will be after them
+//   2: "30",
+//   3.5 : "hello",
 
-};
-console.log(person1);
+// };
+// console.log(person1);
