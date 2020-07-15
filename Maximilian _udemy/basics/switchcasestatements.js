@@ -13,4 +13,3 @@ switch (marks) {
     console.log("You have passed the examination and you are among the toppers");
     break;
 }
-
