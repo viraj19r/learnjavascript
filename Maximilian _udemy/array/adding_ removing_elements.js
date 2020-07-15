@@ -1,4 +1,4 @@
-const arr1 = ["hi","hello"];
+const arr1 = ["hi","hello"]; 
 arr1.push("welcome"); // add to end of array arr1
 arr1.unshift("great"); // add to initial of the array arr1 or shift the last element to right (which is outside array)
 const poppedValue = arr1.pop(); // poppedValue = welcome //.pop() removes the last element from the array

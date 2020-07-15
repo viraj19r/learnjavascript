@@ -10,11 +10,11 @@ Arguments are values we pass to a function when calling that function.
 ### what is method ?
 If we store a function in an object, then the function is said as "method"(a function attached to an object)
 
-| Function declaration/statement  | Function expression            | 
-|---------------------------------|--------------------------------|
-|  function multiply (a,b) {    | const multiply=function(a,b){  |   
-| return a*b;    }  |return a*b;   }   |   
-| Hoisted to top,can be declared anywhere in the file(also after its use)  |hoisted to top but cannot initialized/defined(can't be declared after its use)   |
+| Function declaration/statement                                          | Function expression                                                            |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| function multiply (a,b) {                                               | const multiply=function(a,b){                                                  |
+| return a*b;    }                                                        | return a*b;   }                                                                |
+| Hoisted to top,can be declared anywhere in the file(also after its use) | hoisted to top but cannot initialized/defined(can't be declared after its use) |
 
 
 #### we will store functions in variables(anonymous function) if we have to use it only once. we will directly create the anonymous function(giving it a name) where we want to use it(as we use it once)
@@ -57,16 +57,17 @@ The string to be parsed as HTML or XML and inserted into the tree.
 
 #### ```.trim()``` will remove all extra white spaces and all from user input
 ## Array vs Sets vs Maps
-| Array | Sets | Maps |
-|-------|------|------|
-|stores data of any kind and length|stores data of any kind and length|stores key-value data of any kind and length,any key values are allowed |
-|Iterable, special array methods are available| Iterable,some special set methods are available| Iterable,with some special map methods|
-|order is guaranteed, duplicates are allowed,zero-based index to access elements |order is not guaranteed, duplicates are not allowed,no index-based access|order is guaranteed,duplicate keys are not allowed, key-based access |
+| Array                                                                           | Sets                                                                      | Maps                                                                    |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| stores data of any kind and length                                              | stores data of any kind and length                                        | stores key-value data of any kind and length,any key values are allowed |
+| Iterable, special array methods are available                                   | Iterable,some special set methods are available                           | Iterable,with some special map methods                                  |
+| order is guaranteed, duplicates are allowed,zero-based index to access elements | order is not guaranteed, duplicates are not allowed,no index-based access | order is guaranteed,duplicate keys are not allowed, key-based access    |
 ## Maps vs Objects
-|Map |Objects|
-|----|-------|
-|can use any value(any type) as keys|only may use strings,numbers and symbols|
-|Better performance for large quantities of data|perfect for medium sized data(30-40 key value pairs)|
-|better performance when adding or removing data frequently|easier and quicker to create(also performance wise)|
+| Map                                                        | Objects                                              |
+| ---------------------------------------------------------- | ---------------------------------------------------- |
+| can use any value(any type) as keys                        | only may use strings,numbers and symbols             |
+| Better performance for large quantities of data            | perfect for medium sized data(30-40 key value pairs) |
+| better performance when adding or removing data frequently | easier and quicker to create(also performance wise)  |
 #### WeakSet or WeakMap
 Is like set but have some less methods than set/Map, it is used to store information that is used rarely. so that the browser/javascript inbuilt garbage collector can analyse it and then delete it to increase the performance.
+

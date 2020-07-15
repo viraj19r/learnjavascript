@@ -5,6 +5,6 @@ const amount = [4, 5.6, 3, 6, 2.66];
 //  return prevValue + curValue;
 // },0);
 //or shorten arrow function
-const sum = amount.reduce((prevValue,curValue)=>prevValue + curValue,0);// reduce(an function, initial value(optional))
+const sum = amount.reduce((prevValue, curValue) => prevValue + curValue, 0); // reduce(an function, initial value(optional))
 
 console.log(sum);

@@ -16,7 +16,6 @@ console.log(amount.reverse());
 //   return aValue > 5;     // if  this condition will be true for the array element then it will be stored in the new array otherwise not
 // });
 //or
-const filteredAmount = amount.filter(aValue => aValue > 5); // if  this condition will be true for the array element then it will be stored in the new array otherwise not
-
+const filteredAmount = amount.filter((aValue) => aValue > 5); // if  this condition will be true for the array element then it will be stored in the new array otherwise not
 
 console.log(filteredAmount);
