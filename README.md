@@ -71,3 +71,13 @@ The string to be parsed as HTML or XML and inserted into the tree.
 #### WeakSet or WeakMap
 Is like set but have some less methods than set/Map, it is used to store information that is used rarely. so that the browser/javascript inbuilt garbage collector can analyse it and then delete it to increase the performance.
 
+### this keyword
+The JavaScript this keyword refers to the object it belongs to(current object).
+ 
+ It has different values depending on where it is used:
+  * In a method, this refers to the owner object.
+  * Alone, this refers to the global object(object window).
+  * In a function, this refers to the global object.
+  * In a function, in strict mode, this is undefined.
+  * In an event, this refers to the element that received the event.
+  * Methods like call(), and apply() can refer this to any object.
