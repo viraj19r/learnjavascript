@@ -81,3 +81,6 @@ The JavaScript this keyword refers to the object it belongs to(current object).
   * In a function, in strict mode, this is undefined.
   * In an event, this refers to the element that received the event.
   * Methods like call(), and apply() can refer this to any object.
+
+### class
+classes are blueprints for objects,they define how the objects look like,which properties and method they have. objects are basically instances of classes
