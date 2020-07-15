@@ -10,7 +10,7 @@ const person = {
 };
 
 person.print();
-// var person = {
+// const person = {
 //     firstName: "John",
 //     lastName : "Doe",
 //     id       : 5566,
