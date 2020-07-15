@@ -14,7 +14,7 @@ person.print();
 //     firstName: "John",
 //     lastName : "Doe",
 //     id       : 5566,
-//     fullName : function() {
+//     fullName : function() {                               // there is no meaning of this inside arrow function(it always refers to global object or window object )
 //       return this.firstName + " " + this.lastName;
 //     }
 //   };
