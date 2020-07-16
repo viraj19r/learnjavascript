@@ -50,4 +50,4 @@ const theoretical = new TheoreticalCourse("css", 160, 20);
 
 console.log(practical instanceof Course); // true
 
-const obj = new Object();  // create object(instance of global inbuilt class)
+const obj = new Object(); // create object(instance of global inbuilt class)
