@@ -1,4 +1,5 @@
 class Animal {
+  
     constructor(type , breed, color, food) {
     this.animalType = type;
     this.animalBreed = breed;

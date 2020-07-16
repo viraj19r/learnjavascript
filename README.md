@@ -84,3 +84,8 @@ The JavaScript this keyword refers to the object it belongs to(current object).
 
 ### class
 classes are blueprints for objects,they define how the objects look like,which properties and method they have. objects are basically instances of classes
+
+| Static field/property/method/                         | Instance field/property/method             |
+| ----------------------------------------------------- | ------------------------------------------ |
+| defined with static word                              | defined without static word                |
+| only accessible on class itself without instantiation | only accessible on instance based on class |
