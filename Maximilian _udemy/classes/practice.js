@@ -49,3 +49,5 @@ const theoretical = new TheoreticalCourse("css", 160, 20);
 //instanceOf method - to check whether an object is instance of class or not
 
 console.log(practical instanceof Course); // true
+
+const obj = new Object();  // create object(instance of global inbuilt class)
