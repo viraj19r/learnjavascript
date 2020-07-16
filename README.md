@@ -89,3 +89,5 @@ classes are blueprints for objects,they define how the objects look like,which p
 | ----------------------------------------------------- | ------------------------------------------ |
 | defined with static word                              | defined without static word                |
 | only accessible on class itself without instantiation | only accessible on instance based on class |
+
+##### private fields,methods and properties are only accessible inside the class not outside the class(syntax = #propertyName. Privates should start with #)
