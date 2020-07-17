@@ -14,6 +14,6 @@ class Car {
 }
 
 const myCar = new Car("Ford");
-//  console.log(myCar.hello("car"));  // through an error - calling static using instance/object of class
+//  console.log(myCar.hello("car"));  // throw an error - calling static using instance/object of class
 console.log(Car.hello("ferrari")); // calling static method using class name
 console.log(myCar.hello()); // calling method using instance of class

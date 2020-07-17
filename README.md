@@ -93,3 +93,44 @@ the properties which are declared outside of constructor method are called field
 | only accessible on class itself without instantiation | only accessible on instance based on class |
 
 ##### private fields,methods and properties are only accessible inside the class not outside the class(syntax = #propertyName. Privates should start with #)
+
+### Prototypes
+Javascript uses prototypical inheritance(All JavaScript objects inherit properties and methods from a prototype.).The class syntax is basically just syntactic sugar(simplified form to be human readable because working with them is not easy). So basically constructor function and prototypes gives power to javascript objects
+
+All JavaScript objects inherit properties and methods from a prototype:
+
+- Date objects inherit from Date.prototype
+- Array objects inherit from Array.prototype
+- Person objects inherit from Person.prototype
+- The Object.prototype is on the top of the prototype inheritance chain:
+  Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+  The JavaScript prototype property allows us to add new properties to object constructors:
+  
+   ``` function Person(first, last, age, eyeColor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  } Person.prototype.nationality = "English";
+  ```
+
+  The JavaScript prototype property also allows us to add new methods to objects constructors:
+
+   ``` function Person(first, last, age,   eyeColor){    
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  }Person.prototype.name = function()
+  {return this.firstName + " " + this.lastName;
+  };
+  ```
+
+  ### prototype chain 
+  let us assume we have an constructor function/class and we created a new instance of it (an object). Now we want to call a function from it which actually not created inside it. so first of all javascript look for it inside the constructor function(is it defined in it  ?).If yes then further code will be executed otherwise it will check in  ` __proto__ ` prototype and more and more deeper(base of base) until not found and then last prototype it checks is our global objects.
+
+    
+  
+  
+
