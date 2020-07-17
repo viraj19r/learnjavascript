@@ -138,3 +138,12 @@ All JavaScript objects inherit properties and methods from a prototype:
      ### [scroll handling](https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll)
      ### [get input in javascript using html template tag](https://javascript.info/template-element)    
      ### [Scheduling/Timer: setTimeout and setInterval](Scheduling: setTimeout and setInterval)
+
+     ### [location object on w3 school](https://www.w3schools.com/jsref/obj_location.asp)
+     ### [location object mdn](https://developer.mozilla.org/en-US/docs/Web/API/Location)
+     ### [history object](https://www.w3schools.com/jsref/obj_history.asp)
+     ### [history api mdn](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+     ### [Navigator object](https://www.w3schools.com/jsref/obj_navigator.asp)
+     ### [navigator api mdn](https://developer.mozilla.org/en-US/docs/Web/API/Navigator)
+     ### [date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+     ### [error object and handling error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
