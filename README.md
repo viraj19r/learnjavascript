@@ -130,7 +130,11 @@ All JavaScript objects inherit properties and methods from a prototype:
   ### prototype chain 
   let us assume we have an constructor function/class and we created a new instance of it (an object). Now we want to call a function from it which actually not created inside it. so first of all javascript look for it inside the constructor function(is it defined in it  ?).If yes then further code will be executed otherwise it will check in  ` __proto__ ` prototype and more and more deeper(base of base) until not found and then last prototype it checks is our global objects.
 
-    
-  
-  
-
+    ### [data attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+    ### [what is dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset)
+    ### [determine dimension of an element](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
+    #### [determine dimension of an element short summary](https://drive.google.com/file/d/1A4gL3srrGBy6Ze4bX8IsjGGa-4VXZv4Y/view?usp=sharing)
+     window.innerWidth and window.innerHeight will give the dimensions of window object excluding the scroll bars. document.documentElement.clientHeight/clientWidth will actually give the actual size of the window including the scroll bar(if there any).
+     ### [scroll handling](https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll)
+     ### [get input in javascript using html template tag](https://javascript.info/template-element)    
+     ### [Scheduling/Timer: setTimeout and setInterval](Scheduling: setTimeout and setInterval)
