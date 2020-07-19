@@ -16,6 +16,6 @@ const anotherButtonClickHandler = () => {
 //   button.removeEventListener("click",buttonClickHandler);
 // }, 2000);
 
-buttons.forEach(btn =>{ // for both buttons
-    btn.addEventListener("click",buttonClickHandler);
-})
+// buttons.forEach(btn =>{ // for both buttons
+//     btn.addEventListener("click",buttonClickHandler);
+// })
