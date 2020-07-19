@@ -1,11 +1,10 @@
-function createTaxCalculator (tax) {
-    function calculateTax(amount) {
-
-        return tax * amount;
-    }
-    return calculateTax;
+function createTaxCalculator(tax) {
+  function calculateTax(amount) {
+    return tax * amount;
+  }
+  return calculateTax;
 }
-const calculateNewTax  =  createTaxCalculator(0.25);
+const calculateNewTax = createTaxCalculator(0.25);
 console.log(calculateNewTax(100));
 console.log(calculateNewTax(500));
 // CLOSURES
