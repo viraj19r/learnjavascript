@@ -8,5 +8,11 @@ fs.writeFile("user.txt", "username=max", (err) => { // it will create a file of 
   } else {
     console.log("created a file");
   }
-});
+});fs.writeFile("user.html","<h1>Hii there </h1>",err => {  // create an html file
+  if(err){
+    console.log(err);
+  }else{
+    console.log("created an html file");
+  }
+})
 
