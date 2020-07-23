@@ -152,4 +152,60 @@ All JavaScript objects inherit properties and methods from a prototype:
 a function is pure if it give a fix output for particular arguments
 a function is impure if its output is random for fix arguments and also it can change the things outside the function body(like a variable)
 
+### Security
+when a website is live anyone can see our source code through browser developer tools(also important information,database information) and manipulate it, so the best practice to secure our data is that we should not put important information to our frontend code.
 
+#### Cross-site scripting attacks(XSS)
+malicious javascript code is injected in our code and then executed and injected code can do anything that our code can. The injected code also get access to server side code(as it can send and receive request, it gets all control behind the scenes).
+- Example - if anyone changes our innerHtml code then it should be changed and shown changed in our source code, but result is not shown in browser in every case, because modern browsers are secured they don't render the changed code.
+- The best practice is not to use the innerHtml property in javascript, we should use text-content instead.
+- Or we should not store database credentials to open a connection to database.
+- To prevent this attack we can use [sanitize html package](https://www.npmjs.com/package/sanitize-html), every time we send code to server side(sanitization should be done each time we send code on server and then only it should store in database).
+- We should also aware of while using third party libraries/packages, we should use only the ones which are secured and trusted ones(not malicious and fraud).
+
+#### Cross-site Request Forgery(CSRF)
+when we normally visits a website and there found a link or image link and open it and then there the code get executed and access our cookies and other credentials. 
+- Requests to malicious servers are made through user's cookies without knowing the user
+- this can be prevented by using csrf token on server side 
+#### Cross origin Resource sharing(CORS)
+ It is not a attack pattern but a security pattern/mechanism.
+ -  Requests are only allowed by same/one origin(domain/server).
+ -  Requests must be controlled via only servers side response header or browsers
+
+### Deploying Javascript code
+Mainly there are two kinds of websites/application
+ - Single-Page-Applications (HTML + CSS + JS with only one HTML page being served, client-side JS is used to re-render the page dynamically)
+ - Static websites- which only contain html,css and javascript - requires a static host(which doesn't execute server side code)-like as AWS S3,firebase hosting,
+ - Dynamic websites- one which also contain server side codes - requires a dynamic host(able to run server side code also)-like as AWS elastic beanstalk, Heroku,
+
+##### Deployment steps
+ 1. Develop/Write code
+ 2. Test code
+ 3. optimize code (like add fallback for good browser support)
+ 4. Build code for production(with webpack to shrink our code)
+ 5. Deploying output
+
+For practice (static hosting) we can deploy our project to firebase hosting(google).
+For dynamic hosting(server side hosting) we can use 'Heroku' which is free to use initially.
+
+### Performance Optimizations
+Mainly we consider two types of performances
+ |startup time performance| run time performance|
+ |----------------------|-------------------|
+ |how does it takes to see something on screen and how quickly a user is able to interact with the screen|how smooth does the application run(are there freezes or logs) or how smooth do the animation play(is there any visual log) or are there any memory leaks ,is the page getting slower over the time|
+|how fast the script load and execute ?|how much work does the script do and how much memory is occupied|
+|it depends only on browser side javascript|depends on all side javascript|
+
+  Performance factors
+ - Start time
+   - Bundle/script size: delays initial parsing and execution
+   - number of http round trips : delays initial parsing and execution
+ - Run time
+   - avoid unnecessary code execution, especially unnecessary dom operations
+   - Avoid memory leaks - can crash our application in worst case,but slow downs in all cases
+   - regularly find code alternatives for better performance
+   
+ - unnecessary html, css and javascript code influences the speed and configuration of server. complex id and class selector in css also effects a lot.
+ - use performance.now()
+ - use browser dev tools(chrome dev tools)
+ - use jsperf.com and webpagetest.com website 
