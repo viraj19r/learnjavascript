@@ -151,3 +151,5 @@ All JavaScript objects inherit properties and methods from a prototype:
 ### pure and impure functions
 a function is pure if it give a fix output for particular arguments
 a function is impure if its output is random for fix arguments and also it can change the things outside the function body(like a variable)
+
+
