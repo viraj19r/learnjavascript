@@ -190,11 +190,11 @@ For dynamic hosting(server side hosting) we can use 'Heroku' which is free to us
 
 ### Performance Optimizations
 Mainly we consider two types of performances
- |startup time performance| run time performance|
- |----------------------|-------------------|
- |how does it takes to see something on screen and how quickly a user is able to interact with the screen|how smooth does the application run(are there freezes or logs) or how smooth do the animation play(is there any visual log) or are there any memory leaks ,is the page getting slower over the time|
-|how fast the script load and execute ?|how much work does the script do and how much memory is occupied|
-|it depends only on browser side javascript|depends on all side javascript|
+ | startup time performance                                                                                | run time performance                                                                                                                                                                                |
+ | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+ | how does it takes to see something on screen and how quickly a user is able to interact with the screen | how smooth does the application run(are there freezes or logs) or how smooth do the animation play(is there any visual log) or are there any memory leaks ,is the page getting slower over the time |
+ | how fast the script load and execute ?                                                                  | how much work does the script do and how much memory is occupied                                                                                                                                    |
+ | it depends only on browser side javascript                                                              | depends on all side javascript                                                                                                                                                                      |
 
   Performance factors
  - Start time
@@ -209,3 +209,10 @@ Mainly we consider two types of performances
  - use performance.now()
  - use browser dev tools(chrome dev tools)
  - use jsperf.com and webpagetest.com website 
+
+### Testing(Automated testing)
+   Types
+  1.  Fully Isolated(testing one function) - also called Unit test
+  2.  With Dependencies(testing a function that calls a function)- also called Integration test
+  3.  Full flow (validating the DOM after a click) - also called End to End test and User interface test.
+- For testing we will use *** jest *** testing framework developed by facebook
