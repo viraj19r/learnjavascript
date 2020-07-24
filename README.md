@@ -221,5 +221,6 @@ Mainly we consider two types of performances
 | Object oriented programming             | Procedural programming                                         | Functional programming                                                                       |
 | --------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | data and logic  is organized in objects | normally write sequential series of steps and tasks to execute | organize code in functions(pure) with clearly defined tasks(pass data around via parameters) |
-
-  #### Procedural programming  
+  
+  ### Data structure and algorithms
+  
