@@ -216,3 +216,10 @@ Mainly we consider two types of performances
   2.  With Dependencies(testing a function that calls a function)- also called Integration test
   3.  Full flow (validating the DOM after a click) - also called End to End test and User interface test.
 - For testing we will use *** jest *** testing framework developed by facebook
+
+### Programming Paradigms
+| Object oriented programming             | Procedural programming                                         | Functional programming                                                                       |
+| --------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| data and logic  is organized in objects | normally write sequential series of steps and tasks to execute | organize code in functions(pure) with clearly defined tasks(pass data around via parameters) |
+
+  #### Procedural programming  
