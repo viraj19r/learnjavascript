@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="tooltip(autonomous_customElement.js"></script>
+    <script src="confirm-link(extending_inbuilt_elements).js"></script>
     <style>
       div {
         border: 2px solid orange;
@@ -16,5 +17,9 @@
     <my-tooltip text="awesome"></my-tooltip>
     <br />
     <my-tooltip>no text attribute set</my-tooltip>
+    <div>i am i unaffected by an tooltip and any shadow dom properties</div>
+   <br>
+   <br>
+   <a is="my-confirm-link" href="https://www.google.com">Google</a>
   </body>
 </html>
