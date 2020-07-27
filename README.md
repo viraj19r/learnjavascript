@@ -222,5 +222,22 @@ Mainly we consider two types of performances
 | --------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | data and logic  is organized in objects | normally write sequential series of steps and tasks to execute | organize code in functions(pure) with clearly defined tasks(pass data around via parameters) |
   
-  ### Data structure and algorithms
-  
+  ### Typescript
+  It is basically superset of javascript(with more features). It is compiled to javascript when we use it
+  Typescript does not run in browsers. Browsers don't know how to run typescript, they know only about javascript
+
+  ### Web Components
+  web components are our own custom html components, html elements that are not built in browsers but created by us or any other developer and we are using them for the sake of simplicity
+  #### Shadow DOM 
+  it is basically a subtree of dom which is completely separated from the main tree and which manages a separate dom node tree for our html elements
+  #### Templates and slots
+  we write html templates so that we can later add them to our html element
+  we use slots to input extra values and input in our elements template.
+  ##### why should we use web components ?
+  - allows us to encapsulate logic and UI in one custom html tag ---east to maintain/easy to understand/
+  - reusable across our page/multiple apps/ multiple projects --- write UI and logic only once/ now we can use like a normal html element
+   
+   ##### types of custom elements
+   1. Autonomous Elements -- newly created element, completely separated from inbuilt elements
+   2. Extended builtin elements -- adding more features to inbuilt elements
+
