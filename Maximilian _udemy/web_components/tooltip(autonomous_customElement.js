@@ -3,6 +3,7 @@ class Tooltip extends HTMLElement {
 
   constructor() {
     super(); // required use it to call the constructor of base class HTMLElement
+    this._toolTipIcon;
     this._tooltipContainer; // we added it here so that we can remove it later when the hover over action is done
     this._tooltipText = "default text in case not set in text attribute inside html code";
     this.attachShadow({ mode: "open" }); // attach a shadow tree to give style to tooltip box
@@ -25,11 +26,15 @@ class Tooltip extends HTMLElement {
     if (this.hasAttribute("text")) {
       this._tooltipText = this.getAttribute("text");
     }
-    const toolTipIcon = this.shadowRoot.querySelector("span");
-    toolTipIcon.addEventListener("mouseenter", this._showTooltip.bind(this));
-    toolTipIcon.addEventListener("mouseleave", this._hideTooltip.bind(this));
+    this._toolTipIcon = this.shadowRoot.querySelector("span");
+    this._toolTipIcon.addEventListener("mouseenter", this._showTooltip.bind(this));
+    this._toolTipIcon.addEventListener("mouseleave", this._hideTooltip.bind(this));
     this.shadowRoot.appendChild(toolTipIcon); // this will now access the shadow dom tree and append the child to it but the text will not be shown (that will be shown when we use html templates)
     this.style.position = "relative";
+  }
+  disconnectedCallback() {  // this will be executed when an element is removed from dom . basically it is for cleanup the code
+    this._toolTipIcon.removeEventListener("mouseenter",this._showTooltip.bind(this));
+    this._toolTipIcon.removeEventListener("mouseleave",this._hideTooltip.bind(this));
   }
   _showTooltip() {
     this._tooltipContainer = document.createElement("div");
