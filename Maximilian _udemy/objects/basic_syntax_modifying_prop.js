@@ -5,6 +5,9 @@ const person = {
   hobbies: ["playing", "coding"], // array(object) inside object
   greet: () => "hi there", // a function inside object ==== method
 };
+// Object.freeze(person);// this will make the object immutable
+// person.hasOwnProperty(1.5);// check whether a property exists in the object, if exist returns true
+
 // accessing properties
 // console.log(person.greet(),person.name,person.age,person.hobbies);
 
